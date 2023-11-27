@@ -1,0 +1,14 @@
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Max&John.exe
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Max&John.deps.json
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Max&John.runtimeconfig.json
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Max&John.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Max&John.pdb
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.AssemblyInfoInputs.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.AssemblyInfo.cs
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.csproj.CoreCompileInputs.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\refint\Max&John.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.pdb
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.genruntimeconfig.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\ref\Max&John.dll
