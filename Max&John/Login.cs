@@ -52,7 +52,7 @@ namespace Max_John
 
         public bool checkUserExist()
         {    // file path
-            string final_path = file_path + filaname;
+            string final_path = file_path +"\\"+ filaname;
 
             var lines  =   File.ReadAllLines(final_path);
 

@@ -33,7 +33,7 @@ namespace Max_John
         {
 
             string prepared = username + " " + password + "\n";
-            string final_path = file_path + filename;
+            string final_path = file_path + "\\"+ filename;
 
             File.AppendAllText(final_path, prepared);
 
