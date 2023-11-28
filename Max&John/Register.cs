@@ -14,7 +14,7 @@ namespace Max_John
         string password = string.Empty;
 
 
-        public  void registerUser()
+        public void registerUser()
         {    // gets the username
             Console.WriteLine("username:");
             username = Console.ReadLine();
@@ -27,19 +27,40 @@ namespace Max_John
 
             Console.WriteLine("Register Successful");
 
-}       
+        }
 
         public void writeToFile()
         {
 
-            string prepared = username + " " + password + "\n";
-            string final_path = file_path + "\\"+ filename;
 
+            string final_path = file_path + "\\" + filename;
+            int id = GetNewId();
+            string prepared = id + "," + username + "," + password + "\n";
             File.AppendAllText(final_path, prepared);
 
 
         }
+        public int GetNewId()
+        {
+            string final_path = file_path + "\\" + filename;
 
+            if (File.Exists(final_path))
+            {
+                var lines = File.ReadAllLines(final_path);
 
+                var line = lines[lines.Length - 1];
+
+                string lastuser_id = line.Split(',')[0];
+                int id = Convert.ToInt32(lastuser_id);
+                return ++id;
+
+            }
+            else
+            {
+
+                return 1;
+            }
+
+        }
     }
 }

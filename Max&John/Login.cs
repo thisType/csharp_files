@@ -31,11 +31,15 @@ namespace Max_John
                 Console.WriteLine("password:");
                 password = Console.ReadLine();
 
+                int id = checkUserExist();
 
-                bool user_exist = checkUserExist();
-                if(user_exist)
+                if (id >=1)
                 {
                     Console.WriteLine($"Welcome {username}");
+
+                    SelectionOrder order = new(id);
+                    order.OrderBook();
+                     
                     break;
 
                 }
@@ -50,27 +54,27 @@ namespace Max_John
 
         }
 
-        public bool checkUserExist()
+        public int checkUserExist()
         {    // file path
             string final_path = file_path +"\\"+ filaname;
 
             var lines  =   File.ReadAllLines(final_path);
 
-            bool user_exist = false;
+            int user_id = -1;
             
             foreach (var line in lines)
             {     
                 // split line
-                  var  split_line = line.Split(' ');
+                  var  split_line = line.Split(',');
 
-                if (split_line[0]== username && split_line[1] == password)
+                if (split_line[1]== username && split_line[2] == password)
                 {
-                    user_exist = true;
+                    user_id = Convert.ToInt32(split_line[0]);
                     break;
                    
                 }
                }
-            return user_exist;
+            return user_id;
 
         }
 

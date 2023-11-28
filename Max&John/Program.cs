@@ -1,14 +1,14 @@
 ﻿
 using Max_John;
 
-Console.WriteLine("1.Register\n 2.Login \n 3.Exit\n");
+Console.WriteLine("1.Register\n2.Login\n3.Admin\n4.Exit");
 
 bool exit_program = false;
  string user_input = String.Empty;
 
 Register register = new Register();
-Login login = new Login();  
-   
+Login login = new Login();
+Admin admin = new Admin();  
     Console.WriteLine("input:");
 
 
@@ -26,6 +26,14 @@ Login login = new Login();
             exit_program = true;
             break;
           case "3":
-            exit_program = true;
+                admin.LoginAdmin();
             break;
+        case "4":
+            exit_program = true;
+             break;
+         default:
+        Console.WriteLine("Invalid Choice!");
+        break;
+
+
 }
