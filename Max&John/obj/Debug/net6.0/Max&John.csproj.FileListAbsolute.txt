@@ -12,3 +12,7 @@ C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\refint\Max&John.d
 C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.pdb
 C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.genruntimeconfig.cache
 C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\ref\Max&John.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Model.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\bin\Debug\net6.0\Model.pdb
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.csproj.AssemblyReference.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\obj\Debug\net6.0\Max&John.csproj.CopyComplete

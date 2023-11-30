@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Max_John.Controllers;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +10,6 @@ namespace Max_John
 {
     internal class Login
     {
-        // variable intialization
-        const string filaname = "password.txt";
-        string file_path = Directory.GetCurrentDirectory();
         string username = string.Empty;
         string password = string.Empty;
 
@@ -55,24 +54,23 @@ namespace Max_John
         }
 
         public int checkUserExist()
-        {    // file path
-            string final_path = file_path +"\\"+ filaname;
-
-            var lines  =   File.ReadAllLines(final_path);
+        { 
 
             int user_id = -1;
-            
-            foreach (var line in lines)
-            {     
-                // split line
-                  var  split_line = line.Split(',');
 
-                if (split_line[1]== username && split_line[2] == password)
+            Controller controller = new Controller();
+            UserModel[] users = controller.GetUsers();
+
+            
+            foreach (var user in users)
+            {     
+                if(user.name == username && user.password == this.password)
                 {
-                    user_id = Convert.ToInt32(split_line[0]);
-                    break;
-                   
+                    user_id = user.id; break;
+
                 }
+
+
                }
             return user_id;
 

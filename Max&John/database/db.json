@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "admin",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "name": "Author",
+      "password": "3456"
+    }
+  ],
+  "books": [
+    {
+
+      "id": 1,
+      "name": "Feeling is the Secret",
+      "description": "Human consciousness"
+    }
+  ],
+  "orders": []
+}

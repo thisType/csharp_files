@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Max_John.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,7 @@ namespace Max_John
 {
     internal class Register
     {
-        const string filename = "password.txt";
-        string file_path = Directory.GetCurrentDirectory();
+
         string username = string.Empty;
         string password = string.Empty;
 
@@ -23,44 +23,27 @@ namespace Max_John
             Console.WriteLine("password:");
             password = Console.ReadLine();
 
-            this.writeToFile();
 
             Console.WriteLine("Register Successful");
 
-        }
-
-        public void writeToFile()
-        {
-
-
-            string final_path = file_path + "\\" + filename;
-            int id = GetNewId();
-            string prepared = id + "," + username + "," + password + "\n";
-            File.AppendAllText(final_path, prepared);
-
-
-        }
-        public int GetNewId()
-        {
-            string final_path = file_path + "\\" + filename;
-
-            if (File.Exists(final_path))
-            {
-                var lines = File.ReadAllLines(final_path);
-
-                var line = lines[lines.Length - 1];
-
-                string lastuser_id = line.Split(',')[0];
-                int id = Convert.ToInt32(lastuser_id);
-                return ++id;
-
-            }
-            else
+            Controller controller = new Controller();
+            bool success = controller.RegisterUser(username, password);
+            if(success)
             {
 
-                return 1;
+                Console.WriteLine("Registered Successful");
+            } else
+            {
+                Console.WriteLine("Something went wrong!");
             }
 
+
         }
+
+
+
+
     }
 }
+
+

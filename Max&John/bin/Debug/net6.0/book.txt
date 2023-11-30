@@ -1,3 +1,6 @@
 1,Java programming,learn java programmming language
 2,learn C# programming,learn the .Net Platform
 3,learn web responsiveness,learn targetting multiple screens
+4,Server x,Cloud compute
+5,Quantum Computing,qubits research
+6,Hare and Hyena,story book

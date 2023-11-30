@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Max_John.Controllers;
+using Max_John.Services;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +13,7 @@ namespace Max_John
     {
 
         int  user_id = 0;
-        string file_path = Directory.GetCurrentDirectory();
-        string file_book = "book.txt";
-        string file_orders = "orders.txt";
+       
 
 
         public SelectionOrder(int id) { 
@@ -26,7 +27,7 @@ namespace Max_John
         {
             while (true)
             {
-                 var lines = ListBooks();
+                 var bookModels = ListBooks();
 
                 Console.WriteLine("Select Book");
 
@@ -34,14 +35,12 @@ namespace Max_John
                  
                   int selection_int = Convert.ToInt32(selection);
 
-                if (selection_int > 0 && selection_int <= lines.Length
-                    ) {
+                if (selection_int > 0 && selection_int <= bookModels.Length) {
 
-                    string selected_line = lines[selection_int - 1];
+                    BookModel bookModel = bookModels[selection_int - 1];
 
-                    var selected_line_array = selected_line.Split(",");
 
-                    int book_id = Convert.ToInt32(selected_line_array[0]);
+                    int book_id = Convert.ToInt32(bookModel.id);
 
                     MakeOrder(book_id);
                     break;
@@ -68,7 +67,6 @@ namespace Max_John
         public void MakeOrder(int book_id)
         {
 
-            string final_order_path = file_path + "\\" + file_orders;
             Console.WriteLine("1.Buy Book\n2.Ignore\n");
 
             string selection = Console.ReadLine();
@@ -76,7 +74,8 @@ namespace Max_John
             switch (selection)
             {
                 case "1":
-                    File.AppendAllText(final_order_path, this.user_id + " "+ book_id + "\n");
+                    Controller controller = new Controller();
+                    controller.MakeOrder(this.user_id,book_id);
                     Console.WriteLine("Payment Successful");
                     break;
                     case "2":
@@ -89,20 +88,20 @@ namespace Max_John
 
         }
 
-        public String [] ListBooks()
-        {
-            string final_book_path = file_path + "\\" + file_book;
+        public BookModel [] ListBooks()
 
-            var lines = File.ReadAllLines(final_book_path);
+        {
+            Controller controller = new Controller();
+
+             BookModel[] models = controller.ListBooks();
             int i = 1;
-            foreach (var line in lines)
+            foreach (BookModel model in models)
             {
-                var lines_split = line.Split(",");
-                  Console.WriteLine($"{i}.  {lines_split[1]} {lines_split[2]} ");
+                  Console.WriteLine($"{i}.  {model.name} {model.description} ");
                   ++i;
 
             }
-            return lines.ToArray();
+            return models;
 
 
 
