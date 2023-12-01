@@ -64,7 +64,7 @@ namespace Max_John
                            case "2":
                         Console.WriteLine("Bye!");
                         return;
-                            break;
+                        
                            default:
                            Console.WriteLine("Invalid Choice!");
                             break;

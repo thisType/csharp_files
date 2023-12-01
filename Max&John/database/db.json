@@ -9,15 +9,34 @@
       "id": 2,
       "name": "Author",
       "password": "3456"
+    },
+    {
+      "id": 3,
+      "name": "Joy",
+      "password": "john1"
     }
   ],
   "books": [
     {
-
       "id": 1,
       "name": "Feeling is the Secret",
       "description": "Human consciousness"
+    },
+    {
+      "id": 2,
+      "name": "The secret",
+      "description": "Thoughts affects reality"
+    },
+    {
+      "id": 3,
+      "name": "The nun",
+      "description": "Evil demon seeking revenge"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "user_id": 1,
+      "book_id": 2
+    }
+  ]
 }

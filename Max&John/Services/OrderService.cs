@@ -13,14 +13,14 @@ namespace Max_John.Services
     {
         HttpClient client = new HttpClient();
 
-        public async Task OrderBook(OrderModel model)
+        public async Task<bool> OrderBook(OrderModel model)
         {
 
 
             string model_json = JsonSerializer.Serialize<OrderModel>(model);
-
+             Console.WriteLine($"model {model.user_id} {model.book_id}");
             var content = new StringContent(model_json, Encoding.UTF8, "application/json");
-
+            Console.WriteLine(content);
 
             var response = await client.PostAsync("http://localhost:3000/orders", content);
 
@@ -28,9 +28,7 @@ namespace Max_John.Services
 
             response.EnsureSuccessStatusCode();
 
-            return true;
-
-
+             return true;
         }
     }
 }

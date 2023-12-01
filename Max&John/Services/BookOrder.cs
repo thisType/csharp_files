@@ -12,12 +12,13 @@ namespace Max_John.Services
     internal class BookOrder: Iservice.IBook
     {
 
-        HttpClient client = new HttpClient();
+        
 
 
 
         public async Task<bool> AddNewBook(BookModel book)
         {
+            HttpClient client = new HttpClient();
             string book_json = JsonSerializer.Serialize<BookModel>(book);
 
             var content = new StringContent(book_json, Encoding.UTF8, "application/json");
@@ -39,6 +40,7 @@ namespace Max_John.Services
 
         public async Task<BookModel[]> ListBook()
         {
+            HttpClient client = new HttpClient();
 
 
             HttpResponseMessage response = await client.GetAsync("http://localhost:3000/books");
@@ -59,14 +61,14 @@ namespace Max_John.Services
 
         public async Task<bool> MakeOrder(OrderModel order)
         {
-
+            HttpClient client = new HttpClient();
 
             string order_json = JsonSerializer.Serialize<OrderModel>(order);
 
             var content = new StringContent(order_json, Encoding.UTF8, "application/json");
 
 
-            var response = await client.PostAsync("https://example.com/api/users", content);
+            var response = await client.PostAsync("http://localhost:3000/orders", content);
 
 
 

@@ -64,14 +64,14 @@ namespace Max_John.Controllers
 
         public void MakeOrder(int user_id,int book_id)
         {
-            OrderService orderService = new OrderService();
+            BookOrder orderS = new BookOrder();
             OrderModel order = new OrderModel();
             order.user_id = user_id;
             order.book_id = book_id;
 
-            Task sucess = orderService.OrderBook(order);
+          Task<bool> success  = orderS.MakeOrder(order);
            
-
+   
 
 
         }

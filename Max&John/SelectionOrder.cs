@@ -76,7 +76,7 @@ namespace Max_John
                 case "1":
                     Controller controller = new Controller();
                     controller.MakeOrder(this.user_id,book_id);
-                    Console.WriteLine("Payment Successful");
+                    Console.WriteLine("Payment Successful"+selection);
                     break;
                     case "2":
                     Console.WriteLine("Ignored payments!");

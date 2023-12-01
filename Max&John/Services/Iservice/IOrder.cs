@@ -10,6 +10,6 @@ namespace Max_John.Services.Iservice
     internal interface IOrder
     {
 
-        public Task OrderBook(OrderModel model);
+        public Task<bool> OrderBook(OrderModel model);
     }
 }

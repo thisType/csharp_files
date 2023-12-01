@@ -1,0 +1,14 @@
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\bin\Debug\net6.0\Assessment3.exe
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\bin\Debug\net6.0\Assessment3.deps.json
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\bin\Debug\net6.0\Assessment3.runtimeconfig.json
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\bin\Debug\net6.0\Assessment3.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\bin\Debug\net6.0\Assessment3.pdb
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.AssemblyInfoInputs.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.AssemblyInfo.cs
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.csproj.CoreCompileInputs.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\refint\Assessment3.dll
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.pdb
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\Assessment3.genruntimeconfig.cache
+C:\Users\jkuri\source\repos\Max&John\Max&John\Controller\Assessment3\Assessment3\obj\Debug\net6.0\ref\Assessment3.dll
